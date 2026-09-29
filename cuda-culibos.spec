@@ -8,7 +8,7 @@
 
 Name:           %(echo %real_name | tr '_' '-')-devel
 Epoch:          1
-Version:        13.3.33
+Version:        13.4.49
 Release:        1%{?dist}
 Summary:        CUDA Culibos Math development library
 License:        CUDA Toolkit
@@ -40,6 +40,9 @@ install -p -m 0755 -D lib/libculibos.a %{buildroot}%{_libdir}/libculibos.a
 %{_libdir}/libculibos.a
 
 %changelog
+* Tue Sep 29 2026 Simone Caronni <negativo17@gmail.com> - 1:13.4.49-1
+- Update to 13.4.49.
+
 * Wed Jul 22 2026 Simone Caronni <negativo17@gmail.com> - 1:13.3.33-1
 - Update to 13.3.33.
 
